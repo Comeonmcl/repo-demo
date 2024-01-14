@@ -5,8 +5,9 @@ import java.util.Scanner;
 
 public class checkYouXiaoZiFu {
     Scanner sc=new Scanner(System.in);
-    String s=sc.next();
+    String s5555555=sc.next();
     Solution07 solution07=new Solution07();
+
 
 }
 class Solution07 {
