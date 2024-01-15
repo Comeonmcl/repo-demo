@@ -1,0 +1,23 @@
+spring:
+  # 服务器配置的四要素
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://123.207.73.185:3306
+    username: jk_db
+    password: jk_db
+  servlet:
+    multipart:
+      max-file-size: 10B
+      max-request-size: 100B
+mybatis:
+  # 驼峰命名的映射
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+    #spring事务管理日志
+    logging:
+      level:
+        org.springframework.jdbc.support.JdbcTransactionManager: debug
+server:
+  port: 8081
+  address: 0.0.0.0
